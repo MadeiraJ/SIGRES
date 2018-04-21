@@ -1,0 +1,190 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* body */
+
+	body{
+	    margin:0;
+	    padding:0;
+	    width: 1350px;
+	    height: 855px;
+	    max-width: 1350px;
+	    background-image: url(../Imagens/fundo2.jpg);
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    font: normal 1em Verdana,sans-serif;
+		animation: animacao 10s infinite alternate  ;
+		-moz-animation: animacao 10s infinite alternate running;
+		-webkit-animation: animacao 10s infinite alternate;
+		-o-animation: animacao 10s infinite alternate;
+	}
+	
+	
+	@keyframes animacao {
+	    0%   {background-image:url(../Imagens/fundo2.jpg);}
+	    50%  {background-image:url(../Imagens/fundo1.jpg);}
+	    100%  {background-image:url(../Imagens/fundo3.jpg);}
+	}
+	
+	@-moz-keyframes animacao {
+	    from   {background-image:url(../Imagens/fundo2.jpg);}
+	    to  {background-image:url(../Imagens/fundo1.jpg);}
+	  
+	}
+	
+	@-webkit-keyframes animacao {
+	    0%   {background-image:url(../Imagens/fundo2.jpg);}
+	    50%  {background-image:url(../Imagens/fundo1.jpg);}
+	    100%  {background-image:url(../Imagens/fundo3.jpg);}
+	}
+	
+	@-o-keyframes animacao {
+	    0%   {background-image:url(../Imagens/fundo2.jpg);}
+	    50%  {background-image:url(../Imagens/fundo1.jpg);}
+	    100%  {background-image:url(../Imagens/fundo3.jpg);}
+	}
+
+/* Contentor */
+
+	#contentor{
+	    width: 900px;
+	    height: 700px;
+	    margin: auto;
+	}
+
+/* Cabecalho */  
+
+	#cabecalho{
+	    width: 600px;
+	    min-width: 600px;
+	    margin: auto;
+	    text-align: center;
+	    color: #8B0000;
+	    margin-top: 20px;
+	}
+
+/* Login */ 
+	#login{
+	    width: 400px;
+	    min-width: 400px;
+	    margin: auto;
+	    margin-top: 50px;
+	    border:6px solid #0B3B0B;
+	    border-radius: 12px;
+	    text-align: center;
+	    opacity: 0.65;
+		background-color: #EDEDED;
+		padding-bottom: 20px;
+	}
+	
+	#login:hover{
+	    opacity: 1;
+	}
+	
+	#login .alertaErro{
+	    color: #8B0000;
+	    padding-top: 20px;
+	    font-size: 12px;
+	    font-weight: bold;
+	}
+	
+	#login .dadosLogin{
+	    margin: auto;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	}
+	
+	#login .dadosLogin input{
+	    width: 200px;
+	    height: 25px;
+	    border:3px solid #DCDCDC;
+	    border-radius: 12px;
+	    background-color: #F5F5F5;
+	    margin: 10px 10px;
+	    text-indent: 10px;
+	}
+	
+	
+	#login input[type=text]:focus, #login input[type=password]:focus {
+	    border:3px solid #8B0000;
+	    border-radius: 12px;
+	}
+	
+	#entrar{
+	    width: 60px;
+	    height: 30px;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+	    border: 1px solid #8B0000;
+	    border-radius: 5px;
+	    background-color: #8B0000;
+	    color: rgb(255,255,255);
+	}
+	
+	#entrar:active{
+	    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+/* Rodape */
+
+#rodape{
+    width: 1350px;
+    height: 107px;
+	max-height: 100%;
+    margin-top: 40px;
+	border-top: 10px solid #8B0000;
+	background-color: #0B3B0B;
+    background-size: cover;
+	color: rgb(255,255,255);
+    opacity: 0.65;
+}
+
+#rodape:hover{
+    opacity: 1;
+}
+
+#rodape h5{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+
+#rodape .icons{
+    margin-top: 15px;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+#rodape .icons li{
+    display: inline;
+	color: rgb(255,255,255);
+}
+
+#rodape .icons a:link,#rodape .icons a:visited {
+    color: rgb(255,255,255);
+	text-decoration: none; 
+}
+
+#rodape .icons a:hover{
+    color: #8B0000;
+	text-decoration: none;
+}
+
+#imagem{
+    width: 15px;
+    height: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#rodape p{
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.clearer {clear: both;}
